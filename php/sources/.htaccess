@@ -1,0 +1,41 @@
+SetEnv PHP_VER 5_2
+
+
+Options +FollowSymlinks
+RewriteEngine On
+
+
+RewriteRule photos/([A-Za-z0-9\-]+)-([0-9]+) photos_solo.php?id=$2 [L]
+RewriteRule nos-actualite/([A-Za-z0-9\-]+)-([0-9]+) blog-post.php?id=$2 [L]
+RewriteRule formulaire/([A-Za-z0-9\-]+)-([0-9]+) njuko.php?id=$2 [L]
+RewriteRule formulaire_derny/([A-Za-z0-9\-]+)-([0-9]+) njuko.php?id=$2 [L]
+RewriteRule print/([A-Za-z0-9\-]+)-([0-9]+) print_inscriptions.php?id=$2 [L]
+
+
+
+RewriteRule	^$		index.php
+RewriteRule	^notre-club$	leclub.php	[L]	
+RewriteRule	^prochaines-sorties$	sorties.php	[L]	
+RewriteRule	^run-bike$	run&bike.php	[L]	
+RewriteRule	^gentleman-des-champions$	gentleman_presentation.php	[L]
+RewriteRule	^gentleman-des-champions-final$	envoie_inscription.php	[L]
+RewriteRule	^gentleman-des-champions-reglement$	gentleman_reglement.php	[L]
+RewriteRule	^gentleman-des-champions-parcour$	gentleman_parcourt.php	[L]
+RewriteRule	^gentleman-des-champions-inscription$	gentleman_inscription.php	[L]
+RewriteRule	^gentleman-des-champions-repas$	repas.php	[L]
+RewriteRule	^gentleman-des-champions-resultats$	gentleman_resultat.php	[L]
+RewriteRule	^gentleman-des-champions-presse$	gentleman_presse.php	[L]
+RewriteRule	^marathon-relais$	flyer.php	[L]
+RewriteRule	^marathon-relais-reglement$	reglement.php	[L]
+RewriteRule	^marathon-relais-parcour$	parcours.php	[L]
+RewriteRule	^marathon-relais-inscription$	marathon_inscriptions.php	[L]
+RewriteRule	^marathon-relais-resultats$	resultats.php	[L]
+RewriteRule	^marathon-relais-presse$	presse.php	[L]
+RewriteRule	^nos-photos	gallerie.php	[L]
+RewriteRule	^nous-contacter$	contact.php	[L]
+RewriteRule	^actualite$	blog.php	[L]
+RewriteRule	^100-pour-sang$	100poursang.php	[L]
+
+
+
+ErrorDocument 404 /404.html
