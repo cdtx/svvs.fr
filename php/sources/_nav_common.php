@@ -1,7 +1,6 @@
 <nav id="main-menu" class="left navigation">
     <ul class="sf-menu no-bullet inline-list m0">
         <li><a href="/index.php" class="active"><img src="/images/accueil.png" style="width:10px"></a></li>
-        <li><a href="/rando_tdf" >Rando Tour De France 2024</a></li>
         <li><a href="/actualite">News</a></li>
         <li><a href="/prochaines-sorties">Les sorties</a></li>
         <li><a href="/100-pour-sang" >100 pour sang</a></li>
