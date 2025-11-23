@@ -13,10 +13,12 @@ services:
      volumes:
        - ./php/sources:/var/www/html
        - ./php/images:/var/www/html/images
+     networks:
+       thenet:
+         ipv4_address: 172.20.1.10
 
    mysql:
      image: mysql:8.0-debian
-     # image: mysql:5.6.25
      command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8 --collation-server=utf8_unicode_ci
      env_file: "mysql_config.env"
        # env_file content:
@@ -24,10 +26,11 @@ services:
        #   MYSQL_DATABASE=
        #   MYSQL_USER=
        #   MYSQL_PASSWORD=
-     ports:
-       - 3306:3306
      volumes:
        - ./mysql/data:/var/lib/mysql
+     networks:
+       thenet:
+         ipv4_address: 172.20.1.11
 
    adminer:
      image: adminer:latest
@@ -36,3 +39,13 @@ services:
      restart: always
      ports:
        - 8080:8080
+     networks:
+       thenet:
+         ipv4_address: 172.20.1.12
+
+networks:
+  thenet:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.20.1.0/24
