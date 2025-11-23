@@ -5,20 +5,20 @@
 
 	<title>SVVS</title>
 
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/foundation.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/css/foundation.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/css/responsive.css" type="text/css" media="screen">
 
     <!-- include jQuery library -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <!-- include Cycle plugin -->
-    <script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
+    <script type="text/javascript" src="/js/jquery.cycle.all.latest.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
