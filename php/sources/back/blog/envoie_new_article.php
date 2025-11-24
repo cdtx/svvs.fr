@@ -83,7 +83,7 @@ else
 $lien='images/articles/'.$fichier;
 //-----------------------------//
 //-----------------------------//
-$sql = "INSERT INTO `blog` (`id`,`titre`,`google`,`photo`, `date`,`texte`) VALUES ('','$titre','$google','$lien','$datetime','$texte');"; 
+$sql = "INSERT INTO `blog` (`titre`,`google`,`photo`, `date`,`texte`) VALUES ('$titre','$google','$lien','$datetime','$texte');"; 
 $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 echo "<script type='text/javascript'>document.location.replace('index.php?mess=oui');</script>";
 
